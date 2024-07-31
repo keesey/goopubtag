@@ -1,5 +1,11 @@
 # goopubtag
 
+## Unreleased
+
+### Fixed
+
+- Issue with `sizeMapping`.
+
 ## 0.2.0
 
 ### Minor Changes

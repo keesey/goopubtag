@@ -42,8 +42,7 @@ const useGPTSlot = (props: UseGPTSlotProps) => {
 						for (const { viewport, sizes } of sizeMapping) {
 							mapping.addSize(viewport, sizes);
 						}
-						mapping.build();
-						unit.defineSizeMapping(mapping);
+						unit.defineSizeMapping(mapping.build());
 					}
 
 					if (targetingArguments) {

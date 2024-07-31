@@ -106,7 +106,7 @@ export type OutOfPage = Pick<SlotUnit, "adUnit" | "targetingArguments"> &
 
 export type Mapping = {
 	addSize: (viewport: Size, sizes: Sizes) => void;
-	build: () => void;
+	build: () => Sizes;
 };
 
 /**
@@ -289,7 +289,7 @@ export type Slot = {
 	refresh: (...args: unknown[]) => unknown;
 	setTargeting(k: string, v: string | Array<string>): void;
 	addService(...args: unknown[]): unknown;
-	defineSizeMapping(mapping: Mapping): void;
+	defineSizeMapping(sizes: Sizes): void;
 	setCollapseEmptyDiv(a?: boolean, b?: boolean): void;
 };
 
